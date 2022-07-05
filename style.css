@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gainsboro;
+}
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    font-size: 6vw;
+    text-align: center;
+    margin-bottom: .5em;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+img{
+    max-width: 30vw;
+}
+.cell{
+    margin-right: 2px;
+    margin-left: 2px;
+    cursor: pointer;
+}
