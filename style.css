@@ -100,10 +100,12 @@ display: flex;
     width: 200px;
 }
 .left:hover {
-    background-color: red;
+    opacity: .5;
+        background-color: black;
 }
 .right:hover {
-    background-color: yellowgreen;
+    opacity: .5;
+    background-color: black;
 }
 .picker img:hover{
     cursor: pointer;
