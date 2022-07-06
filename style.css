@@ -87,3 +87,24 @@ margin: 1em 0em 1em 0em;
     width: 100px;
     max-width: 14vw;
 }
+.buttons{
+position: absolute;
+height: 600px;
+width: 400px;
+opacity: .5;
+z-index: 20;
+cursor: pointer;
+display: flex;
+}
+.right,.left{
+    width: 200px;
+}
+.left:hover {
+    background-color: red;
+}
+.right:hover {
+    background-color: yellowgreen;
+}
+.picker img:hover{
+    cursor: pointer;
+}
