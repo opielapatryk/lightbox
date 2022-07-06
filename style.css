@@ -33,7 +33,7 @@ img{
 }
 .lightbox{
     height: 100vh;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .8);
     position: relative;
     z-index: 10;
     color: white;
@@ -55,28 +55,35 @@ article{
 display: flex;
 align-items: center;
 height: 100vh;
+width: 100vw;
 justify-content: center;
 flex-direction: column;
 }
 
 .counter{
-    
+    margin-bottom: 1em;
 }
 
+.image-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
 .image-container img{
-    max-width: 90vw;
+    max-width: 500px;
     height: 600px;
 }
 
 .desc{
-
+margin: 1em 0em 1em 0em;
 }
 
 .picker {
-    width: 90vw;
     display: flex;
     justify-content: space-between;
+    max-width: 600px;
 }
 .picker img{
+    width: 100px;
     max-width: 14vw;
 }
