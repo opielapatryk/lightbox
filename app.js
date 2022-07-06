@@ -23,15 +23,22 @@ const buttonLeft = document.querySelector(".left")
 const buttonRight = document.querySelector(".right")
 const desc = document.querySelector(".desc")
 const counterDiv = document.querySelector(".counter")
+const picker = document.querySelector(".picker")
 buttonLeft.addEventListener("click", ()=>{
     counter <=0 ? counter = 5 : counter--
-    imgHero.setAttribute(`src`, heroImages[counter])
 })
 buttonRight.addEventListener("click", ()=>{
     counter >=5 ? counter = 0 : counter++
-    imgHero.setAttribute(`src`, heroImages[counter])
 })
 setInterval(()=>{
 desc.textContent = titles[counter]
 counterDiv.textContent = `${counter+1}/${images.length}`
+imgHero.setAttribute(`src`, heroImages[counter])
 },10)
+
+for(let i = 0; i <= picker.children.length; i++){
+    if(picker.children[i]){
+        picker.children[i].addEventListener("click", () => counter = i)
+    }
+}
+

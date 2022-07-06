@@ -26,6 +26,9 @@ h1{
 img{
     max-width: 30vw;
 }
+img:focus{
+    border: solid white 1px;
+}
 .cell{
     margin-right: 2px;
     margin-left: 2px;
